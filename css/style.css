@@ -1,0 +1,158 @@
+body {
+	font-family: 'RopaSans-Regular';
+	background-color: #000;	
+}
+
+.text-header {
+	text-align: center;
+	padding: 10vh;
+}
+
+.clearPadding {
+	margin-right: 0px;
+	margin-left: 0px;
+	padding:0px;
+}
+
+.header {
+	height: 100vh;
+	background: url('../img/header-1.png') 50% 0;
+	background-size: cover;
+	background-repeat: no-repeat;
+	transition: 0.7s ease-in-out;
+}
+
+.navigation {
+	background-color: #000;
+}
+
+.section-2 {	
+	background-color: #000;
+}
+
+.section-3 {
+	margin-top: 100px;
+}
+
+.navbar-inverse {
+	padding: 0 10px 0 10px;
+	margin-bottom: 0px;
+}
+
+.navbar {
+	border: none;
+	border-radius:0px;
+	font-size: 1.6rem;
+}
+
+.navbar-inverse .navbar-nav li a:hover {
+	background-color: #444;
+	transition: 0.7s all linear;
+	height: 100%;
+}
+
+.container-fluid.navbar-collapse,.container-fluid .navbar-header {
+	margin-right: 0px;
+	margin-left: 0px;
+}
+
+.navbar-brand {
+	padding-left: 30px;
+}
+
+.navbar-brand img {
+	height: 100%;
+}
+
+.preview img{
+	padding-top: 20px;
+	height: 100%;
+	width: 100%;
+}
+
+.overlay:after {
+    content: '';
+    position: absolute;
+    width: 100%; height:100%;
+    top:0; left:0;
+    background:rgba(0,0,0,0.6);
+    opacity: 0;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    z-index: 1;
+}
+
+.overlay:hover:after {
+    opacity: 1;
+}
+
+.overlay:hover .text {
+	color: #fff;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+	opacity: 1;
+}
+
+.text {
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0;
+	z-index: 2;
+}
+
+.text h4 {
+	padding: 30px 0 0 40px;
+}
+
+.text p {
+	font-size: 1.2rem;
+	padding: 0 0 0 40px;
+}
+
+.navbar {
+	border-radius: 0;
+}
+
+.navbar.affix {
+	top: 0px;
+	z-index: 9999;
+	width: 100%;
+		background-color: rgb(34,34,34,0.2);
+}
+    
+@media (min-width: 768px) {
+
+	.navbar .navbar-nav {
+		display: inline-block;
+		float: none;
+		vertical-align: top;
+	}
+
+	.navbar .navbar-collapse {
+		text-align: center;
+	}
+}
+
+.bx-wrapper.bx-viewport {
+	border: 0;
+}
+
+.bx-wrapper .bx-pager a {
+border: solid #000 1px;
+display: block;
+margin: 0 5px;
+padding: 3px;
+}
+
+.bx-wrapper .bx-pager a:hover,
+.bx-wrapper .bx-pager a.active {
+border: solid #5280DD 1px;
+}
+
+.text-header {
+	display: none;  
+	font-size: 3.5rem;
+	justify-content: center;
+	color: #fff;
+}
